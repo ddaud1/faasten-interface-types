@@ -3,10 +3,30 @@ The types that a function needs to know in order to make Faasten CloudCalls.
 
 The types are captured in the following list of CloudCalls:
 
-| CloudCall Name | Argument Type | Return Type |
-|----------------|---------------|-------------|
-| response       | None          | None        |
-
+| CloudCall Name   | Argument Type | Return Type    |
+|------------------|---------------|----------------|
+| response         | Response      | None           |
+| buckleParse      | string        | MaybeBuckle    |
+| taint_with_label | Buckle        | Buckle         |
+| declassify       | Component     | Buckle         |
+| sub_privilege    | TokenList     | Void           |
+| root             | Void          | DentResult     |
+| dent_open        | DentOpen      | DentOpenResult |
+| dent_close       | uint64        | DentResult     |
+| dent_update      | DentUpdate    | DentResult     |
+| dent_read        | uint64        | DentResult     |
+| dent_link        | DentLinK      | DentResult     |
+| dent_unlink      | DentUnlink    | DentResult     |
+| dent_list        | uint64        | DentListResult |
+| dent_ls_faceted  | DentLsFaceted | DentLsFacetedResult |
+| dent_ls_gate     | uint64        | DentLsGateResult |
+| dent_invoke      | DentInvoke    | DentInvokeResult |
+| dent_get_blob    | uint64        | BlobResult       |
+| blob_create      | BlobCreate    | BlobResult       |
+| blob_write       | BlobWrite     | BlobResult       |
+| blob_finalize    | BlobFinalize  | BlobResult       |
+| blob_read        | BlobRead      | BlobResult       |
+| blob_close       | BlobClose     | BlobResult       |
 
 
 Response response ; 
