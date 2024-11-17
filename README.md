@@ -15,7 +15,7 @@ The types are captured in the following list of CloudCalls:
 | dent_close       | uint64        | DentResult     |
 | dent_update      | DentUpdate    | DentResult     |
 | dent_read        | uint64        | DentResult     |
-| dent_link        | DentLinK      | DentResult     |
+| dent_link        | DentLink      | DentResult     |
 | dent_unlink      | DentUnlink    | DentResult     |
 | dent_list        | uint64        | DentListResult |
 | dent_ls_faceted  | DentLsFaceted | DentLsFacetedResult |
