@@ -5,8 +5,8 @@ The types are captured in the following list of CloudCalls:
 
 Response response = 1; 
 
-string buckleParse = 2; // returns MaybeBuckle 
-Void getCurrentLabel = 3; // returns Buckle 
+string buckleParse = 2; // returns MaybeBuckle  
+Void getCurrentLabel = 3; // returns Buckle  
 Buckle taintWithLabel = 4; // returns Buckle (new current label) 
 Component declassify = 5; // returns Buckle (new current label) 
 TokenList subPrivilege = 6; 
