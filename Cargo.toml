@@ -1,0 +1,8 @@
+[package]
+name = "faasten-interface-types"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = {version = "1.0.102", features = ["derive"]}
+labeled = { git = "https://github.com/alevy/labeled", features = ["buckle"] }
