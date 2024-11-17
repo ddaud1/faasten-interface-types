@@ -3,7 +3,13 @@ The types that a function needs to know in order to make Faasten CloudCalls.
 
 The types are captured in the following list of CloudCalls:
 
-Response response = 1; 
+| CloudCall Name | Argument Type | Return Type |
+|----------------|---------------|-------------|
+| response       | None          | None        |
+
+
+
+Response response ; 
 
 string buckleParse = 2; // returns MaybeBuckle  
 Void getCurrentLabel = 3; // returns Buckle  
