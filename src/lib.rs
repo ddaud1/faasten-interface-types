@@ -101,7 +101,7 @@ pub struct DentLink {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct DentUnlink {
-    pub fd: u64,
+    pub dir_fd: u64,
     pub name: String
 }
 
