@@ -6,13 +6,15 @@ The types are captured in the following list of CloudCalls:
 | CloudCall Name   | Argument Type | Return Type    |
 |------------------|---------------|----------------|
 | response         | Response      | Void           |
-| buckleParse      | string        | MaybeBuckle    |
+| buckle_parse     | string        | MaybeBuckle    |
+| get_current_label| Void          | Buckle         |
 | taint_with_label | Buckle        | Buckle         |
 | declassify       | Component     | Buckle         |
 | sub_privilege    | TokenList     | Void           |
 | root             | Void          | DentResult     |
 | dent_open        | DentOpen      | DentOpenResult |
 | dent_close       | uint64        | DentResult     |
+| dent_create      | DentCreate    | DentResult     |
 | dent_update      | DentUpdate    | DentResult     |
 | dent_read        | uint64        | DentResult     |
 | dent_link        | DentLink      | DentResult     |
