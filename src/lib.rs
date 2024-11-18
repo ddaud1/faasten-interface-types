@@ -86,6 +86,24 @@ pub mod dent_update {
         Blob(u64)
     }
 }
+
+/*************************************************
+DENT LINK & DENT UNLINK
+*************************************************/
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentLink {
+    pub dir_fd: u64,
+    pub name: String,
+    pub target_fd: u64
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentUnlink {
+    pub fd: u64,
+    pub name: String
+}
+
 /*************************************************
 GATES
 *************************************************/
