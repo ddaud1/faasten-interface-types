@@ -1,5 +1,6 @@
 use labeled::buckle::{Buckle, Component};
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 
 /*************************************************
 DENT OPEN
@@ -174,4 +175,10 @@ pub struct DentOpenResult {
     pub success: bool,
     pub fd: u64,
     pub kind: i32
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentListResult {
+    pub success: bool,
+    pub entries: HashMap<String, i32>
 }
