@@ -1,4 +1,4 @@
-### Faasten Interface Types
+# Faasten Interface Types
 The types that a Faasten function needs to know in order to make Faasten CloudCalls.
 
 The types are captured in the following list of CloudCalls:
