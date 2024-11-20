@@ -65,7 +65,7 @@ pub mod dent_create {
         FacetedDirectory,
         Gate(super::Gate),
         Service(super::Service),
-        Blob
+        Blob(u64)
     }
 }
 
