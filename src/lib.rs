@@ -173,15 +173,15 @@ pub enum HttpVerb {
     HttpDelete = 4
 }
 
-impl From<i32> for HttpVerb {
-    fn from(val: i32) -> Self {
+impl HttpVerb {
+    pub fn from_i32(val: i32) -> Option<Self> {
         match val {
-            0 => HttpVerb::HttpHead,
-            1 => HttpVerb::HttpGet,
-            2 => HttpVerb::HttpPost,
-            3 => HttpVerb::HttpPut,
-            4 => HttpVerb::HttpDelete,
-            _ => panic!()
+            0 => Some(HttpVerb::HttpHead),
+            1 => Some(HttpVerb::HttpGet),
+            2 => Some(HttpVerb::HttpPost),
+            3 => Some(HttpVerb::HttpPut),
+            4 => Some(HttpVerb::HttpDelete),
+            _ => None
         }
     }
 }
