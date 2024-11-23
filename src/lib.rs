@@ -156,7 +156,7 @@ FUNCTION
 pub struct Function {
     pub memory: u64,
     pub app_image: u64,
-    pub runtime: u64,
+    pub runtime_image: u64,
     pub kernel: u64
 }
 
