@@ -161,6 +161,31 @@ pub struct Function {
 }
 
 /*************************************************
+HTTP VERB
+*************************************************/
+
+#[derive(Serialize, Deserialize, Debug)]
+pub enum HttpVerb {
+    HttpHead = 0,
+    HttpGet = 1,
+    HttpPost = 2,
+    HttpPut = 3,
+    HttpDelete = 4
+}
+
+impl From<HttpVerb> for i32 {
+    fn from(val: HttpVerb) -> Self {
+        match val {
+            HttpVerb::HttpHead => 0,
+            HttpVerb::HttpGet => 1,
+            HttpVerb::HttpPost => 2,
+            HttpVerb::HttpPut => 3,
+            HttpVerb::HttpDelete => 4
+        }
+    }
+}
+
+/*************************************************
 RESULTS
 *************************************************/
 #[derive(Serialize, Deserialize, Debug)]
