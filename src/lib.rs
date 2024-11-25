@@ -106,6 +106,16 @@ pub struct DentUnlink {
 }
 
 /*************************************************
+DENT LIST FACETED
+*************************************************/
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentLsFacetd {
+    pub fd: u64,
+    pub clearance: Option<Buckle>
+}
+
+/*************************************************
 GATES
 *************************************************/
 
@@ -206,4 +216,16 @@ pub struct DentOpenResult {
 pub struct DentListResult {
     pub success: bool,
     pub entries: HashMap<String, i32>
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentLsFacetdResult {
+    pub success: bool,
+    pub facets: Vec<Buckle>
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentLsGateResult {
+    pub success: bool,
+    pub gate: Option<Gate>
 }
