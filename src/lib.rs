@@ -110,7 +110,7 @@ DENT LIST FACETED
 *************************************************/
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct DentLsFacetd {
+pub struct DentLsFaceted {
     pub fd: u64,
     pub clearance: Option<Buckle>
 }
@@ -219,7 +219,7 @@ pub struct DentListResult {
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct DentLsFacetdResult {
+pub struct DentLsFacetedResult {
     pub success: bool,
     pub facets: Vec<Buckle>
 }
