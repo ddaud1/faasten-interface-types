@@ -242,3 +242,11 @@ pub struct DentLsGateResult {
     pub success: bool,
     pub gate: Option<Gate>
 }
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentInvokeResult {
+    pub success: bool,
+    pub fd: Option<u64>,
+    pub data: Vec<u8>,
+    pub headers: std::collections::HashMap<String, Vec<u8>>
+}
