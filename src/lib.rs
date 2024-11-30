@@ -116,6 +116,19 @@ pub struct DentLsFaceted {
 }
 
 /*************************************************
+DENT INVOKE
+*************************************************/
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct DentInvoke {
+    pub fd: u64,
+    pub sync: bool,
+    pub payload: Vec<u8>,
+    pub toblob: bool,
+    pub parameters: std::collections::HashMap<String, String>
+}
+
+/*************************************************
 GATES
 *************************************************/
 
