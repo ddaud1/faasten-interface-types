@@ -209,6 +209,12 @@ impl Into<i32> for HttpVerb {
 }
 
 /*************************************************
+BLOBS
+*************************************************/
+
+
+
+/*************************************************
 RESULTS
 *************************************************/
 #[derive(Serialize, Deserialize, Debug)]
@@ -249,4 +255,12 @@ pub struct DentInvokeResult {
     pub fd: Option<u64>,
     pub data: Vec<u8>,
     pub headers: std::collections::HashMap<String, Vec<u8>>
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct  BlobResult {
+    pub success: bool,
+    pub fd: u64,
+    pub len: u64,
+    pub data: Vec<u8>
 }
