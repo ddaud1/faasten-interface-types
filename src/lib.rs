@@ -262,5 +262,5 @@ pub struct  BlobResult {
     pub success: bool,
     pub fd: u64,
     pub len: u64,
-    pub data: Vec<u8>
+    pub data: Option<Vec<u8>>
 }
