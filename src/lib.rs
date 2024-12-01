@@ -212,6 +212,11 @@ impl Into<i32> for HttpVerb {
 BLOBS
 *************************************************/
 
+#[derive(Serialize, Deserialize, Debug)]
+pub struct BlobWrite {
+    pub fd: u64,
+    pub data: Vec<u8>
+}
 
 
 /*************************************************
