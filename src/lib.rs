@@ -218,6 +218,22 @@ pub struct BlobWrite {
     pub data: Vec<u8>
 }
 
+#[derive(Serialize, Deserialize, Debug)]
+pub struct BlobFinalize {
+    pub fd: u64
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct BlobRead {
+    pub fd: u64,
+    pub offset: Option<u64>,
+    pub length: Option<u64>
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct BlobClose {
+    pub fd: u64
+}
 
 /*************************************************
 RESULTS
