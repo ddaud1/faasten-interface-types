@@ -235,6 +235,17 @@ pub struct BlobClose {
     pub fd: u64
 }
 
+
+/*************************************************
+RESPONSE
+*************************************************/
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct Response {
+    pub body: Vec<u8>,
+    pub status_code: u32
+}
+
 /*************************************************
 RESULTS
 *************************************************/
