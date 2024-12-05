@@ -5,7 +5,7 @@ The types are captured in the following list of CloudCalls:
 
 | CloudCall Name   | Argument Type | Return Type    |
 |------------------|---------------|----------------|
-| response\*| Response      | Void           |
+| response\*       | Response      | Void           |
 | buckle_parse     | string        | MaybeBuckle    |
 | get_current_label| Void          | Buckle         |
 | taint_with_label | Buckle        | Buckle         |
