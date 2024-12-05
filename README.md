@@ -5,7 +5,7 @@ The types are captured in the following list of CloudCalls:
 
 | CloudCall Name   | Argument Type | Return Type    |
 |------------------|---------------|----------------|
-| response^*^      | Response      | Void           |
+| response<sup>*</sup>| Response      | Void           |
 | buckle_parse     | string        | MaybeBuckle    |
 | get_current_label| Void          | Buckle         |
 | taint_with_label | Buckle        | Buckle         |
@@ -30,7 +30,7 @@ The types are captured in the following list of CloudCalls:
 | blob_read        | BlobRead      | BlobResult       |
 | blob_close       | BlobClose     | BlobResult       |
 
-* not a CloudCall in the Wasm runtime implementation
+\* not a CloudCall in the Wasm runtime implementation
 
 
 Response response ; 
