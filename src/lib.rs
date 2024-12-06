@@ -285,7 +285,7 @@ pub struct DentLsGateResult {
 pub struct DentInvokeResult {
     pub success: bool,
     pub fd: Option<u64>,
-    pub data: Vec<u8>,
+    pub data: Option<Vec<u8>>,
     pub headers: std::collections::HashMap<String, Vec<u8>>
 }
 
