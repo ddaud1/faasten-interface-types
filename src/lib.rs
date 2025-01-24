@@ -1,7 +1,7 @@
 use labeled::buckle::{Buckle, Component};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-use extism_convert::{FromBytes, Json};
+use extism_convert::{FromBytes, Json, ToBytes};
 
 /*************************************************
 DENT OPEN
@@ -241,7 +241,7 @@ pub struct BlobClose {
 RESPONSE
 *************************************************/
 
-#[derive(Serialize, Deserialize, Debug, FromBytes)]
+#[derive(Serialize, Deserialize, Debug, FromBytes, ToBytes)]
 #[encoding(Json)]
 pub struct Response {
     pub body: Vec<u8>,
